@@ -104,7 +104,6 @@ def write_to_file():
 while True:
     print("1. Create an assignment\n2. Enter assignment scores\n3. Write your data to file")
     choice = input("Enter in your choice: ").strip()
-    print(repr(choice))
 
     if choice == "1":
         assignment_ui()
