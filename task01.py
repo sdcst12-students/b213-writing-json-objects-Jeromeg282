@@ -62,3 +62,12 @@ Enter in the scores for 10 students for Assignment 2:
 """
 
 import json
+
+assignments = []
+scores = {}
+
+def assignment(name, value):
+    assignmentid= len(assignments)
+    assignments.append({"id": assignmentid, "name": name, "value": value})
+    scores[assignmentid] = {}
+    return assignmentid
